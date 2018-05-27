@@ -15,9 +15,19 @@ private:
 	string *word;
 	string *opisanie;
 
-public:
+
 	GameGround();
 	~GameGround();
+		
+	GameGround(GameGround const&); 
+	GameGround& operator= (GameGround const&);  
+
+public:
+	static GameGround& Instance()
+	{
+		static GameGround s;
+		return s;
+	}
 
 	int GetNumMist() { return numMistakes; }
 	int GetKolWords() { return kolSlov; }
@@ -26,6 +36,7 @@ public:
 	void GameInfo(RenderWindow & window);
 	void NewGame();
 	void Draw(RenderWindow & );
+	void DrawHang(int, RenderWindow &);
 	void Play(RenderWindow &);
 
 

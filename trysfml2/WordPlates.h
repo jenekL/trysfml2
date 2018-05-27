@@ -16,12 +16,10 @@ public:
 	WordPlates(string);
 	~WordPlates();
 
-	void Clear();
 	void SetWord(string);
 	int GetNumUgad();
 	int GetNumCells();
 	bool chekYach(char);
-	void printYach();
 	void Draw(sf::RenderWindow & window, sf::Font);
 
 };

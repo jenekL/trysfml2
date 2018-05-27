@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="Alphabet.h" />
     <ClInclude Include="GameGround.h" />
+    <ClInclude Include="Menuh.h" />
     <ClInclude Include="WordCell.h" />
     <ClInclude Include="WordPlates.h" />
   </ItemGroup>

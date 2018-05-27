@@ -54,7 +54,9 @@ void GameGround::NewGame()
 	alph.Clear();
 	wp.SetWord(word[choosed]);
 }
-void DrawHang(int num, RenderWindow & window) {
+void GameGround::DrawHang(int num, RenderWindow & window)
+{
+	window.clear();
 	Texture first, second, third, fourth, fifth, sixth, seventh;
 
 	first.loadFromFile("images/bgGame.png");

@@ -34,11 +34,6 @@ WordPlates::~WordPlates()
 	numUgad = 0;*/
 }
 
-void WordPlates::Clear()
-{
-
-}
-
 void WordPlates::SetWord(string s)
 {
 	numUgad = 0;
@@ -89,10 +84,6 @@ bool WordPlates::chekYach(char s)
 
 
 	return b;
-}
-
-void WordPlates::printYach()
-{
 }
 
 void WordPlates::Draw(RenderWindow & window, Font font)
